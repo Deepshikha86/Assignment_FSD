@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up/Login Form</title>
+        <link href = 'https://fonts.googleapis.com/css?family=Titillium+web:400,300,600' rel = 'stylesheet' type = 'text/css'>
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+
+    <body>
+        <div class = "form">
+
+            <ul class = "tab_group">
+                <li class = "tab_active"><a href = "#signup">Sign up</a></li>
+                <li class = "tab"><a href = "#login">Log In</a></li>
+            </ul>
+
+            <div class = "tab_content">
+                <div id = "signup">
+                    <h1>Sign up for free</h1>
+
+                    <form action = "" method = "post">
+
+                        <div class = "top_row">
+                            <div class = "field_wrap">
+                                <label>
+                                    First Name<span class = "req">*</span>
+                                </label>
+                                <input type = "text" required autocomplete="off" />
+                            </div>
+
+                            <div class = "field_wrap">
+                                    <label>
+                                        Last Name<span class = "req">*</span>
+                                    </label>
+                                    <input type = "text" required autocomplete="off" />
+                                </div>
+                        </div>
+
+                        <div class = "field_wrap">
+                                <label>
+                                    Email Address<span class = "req">*</span>
+                                </label>
+                                <input type = "email" required autocomplete="off" />
+                            </div>
+
+                            <div class = "field_wrap">
+                                    <label>
+                                        Set a Password<span class = "req">*</span>
+                                    </label>
+                                    <input type = "password" required autocomplete="off" />
+                                </div>
+
+                                <button type = "submit" href = "../index.html" class = "button button-block" > Get Started</button>
+
+                    </form>
+
+                </div>
+
+                <div id = "login">
+                    <h1>Welcome Back!</h1>
+
+                    <form action = "" method = "post">
+                    
+                        <div class = "field_wrap">
+                                <label>
+                                    Email Address<span class = "req">*</span>
+                                </label>
+                                <input type = "email" required autocomplete="off" />
+                            </div>
+
+                            <div class = "field_wrap">
+                                    <label>
+                                        Password<span class = "req">*</span>
+                                    </label>
+                                    <input type = "password" required autocomplete="off" />
+                                </div>
+
+                                <p class = "forgot"><a href = "#">Forgot Password?</a></p>
+
+                                <button class = "button button-block" >Log In</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+        <script src ='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src = "index.js"></script>
+
+    </body>
+</html>
